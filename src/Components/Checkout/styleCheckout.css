@@ -1,0 +1,72 @@
+.checkout_form label {
+    display: block;
+    width: 100%;
+    color: #838889;
+    font-size: 1rem;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.checkout_form input {
+    display: block;
+    width: 100%;
+    border: 0;
+    color: #161619;
+    margin: 8px 0 16px;
+    padding: 8px 0;
+    font-size: 14px;
+    outline: 0;
+    font-family: 'Futura_medium', sans-serif;
+    border-bottom: 2px solid #e3e7e8;
+    transition: all .6s ease-out;
+    text-transform: uppercase;
+}
+
+.checkout_form input:hover {
+    border-bottom: 2px solid #000;
+}
+
+.form_total {
+    width: 100%;
+    height: 3.75rem;
+    margin-top: 1.875rem;
+    box-shadow: 0 0.0625rem 0.3125rem rgba(0, 0, 0, 0.1);
+    background-color: black
+}
+
+.form_total_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_total_title {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    margin-left: 4rem;
+}
+
+.form_total_amount {
+    display: inline-block;
+    justify-content: end;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-right: 6rem;
+    line-height: 3.75rem;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 349px) and (max-width: 517px) {
+    .form_total_title {
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+
+    .form_total_amount {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+}

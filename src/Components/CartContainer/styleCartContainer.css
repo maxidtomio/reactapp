@@ -1,0 +1,100 @@
+.cart_container {
+    max-height: 60vh;
+    overflow: scroll;
+    width: auto;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.clear {
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+}
+
+.cart_scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cart_scroll::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+}
+
+.clear button {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+}
+
+.clear button,
+button span {
+    transition: 200ms;
+}
+
+.clear button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.clear button .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(160px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear button svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.clear button:hover {
+    background: #ff3636;
+}
+
+.clear button:hover .text {
+    color: transparent;
+}
+
+.clear button:hover .icon {
+    width: 200px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.clear button:focus {
+    outline: none;
+}
+
+.clear button:active .icon svg {
+    transform: scale(0.8);
+}
+
+
+@media screen and (min-width: 349px) and (max-width: 576px) {
+    .card-img-top {
+        height: auto;
+    }
+
+    .boton {
+        padding: 0.7rem;
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        border-radius: 2rem;
+    }
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.nav1 {
+    background-color: #000000;
+    padding: 1rem 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buscador {
+    flex: 60%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.widget {
+    flex: 40%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 0.8rem;
+}
+
+.nav2 {
+    background-color: #333333;
+}
+
+.navbar {
+    padding: 0rem 1rem;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.nav-custom {
+    font-size: 1rem;
+    font-weight: 600;
+    top: 0;
+}
+
+.nav-custom a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.nav-custom li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    background-color: #333333;
+    border: none;
+}
+
+.dropdown-menu a {
+    font-weight: 600;
+    color: rgba(255, 255, 255, .75);
+}
+
+.dropdown-item:hover {
+    color: #FFFFFF;
+}

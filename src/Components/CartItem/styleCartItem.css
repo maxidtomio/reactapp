@@ -1,0 +1,124 @@
+.container_cartItem {
+    width: 100%;
+    margin: 0;
+}
+
+.cartItem {
+    height: auto;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    width: inherit;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.container_cartImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 26vh;
+    height: 35vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+.container_cartImg img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container_cartInfo {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #949494;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 25vh;
+}
+
+.container_cartSubTotal {
+    padding-top: 1rem;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.remove {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.remove:hover {
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container_cartImg {
+        width: 20vh;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 697px) and (max-width: 767px) {
+    .container_cartImg {
+        width: 40vh;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 622px) and (max-width: 696px) {
+    .container_cartImg {
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 621px) {
+    .container_cartImg {
+        width: 100vh;
+        height: 80vh;
+    }
+
+    .container_cartInfo {
+        width: 100vh;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 590px) {
+    .container_cartImg {
+        width: 90vh;
+        height: 60vh;
+    }
+
+    .container_cartInfo {
+        width: 80vh;
+    }
+}
+
+@media screen and (min-width: 349px) and (max-width: 449px) {
+    .container_cartImg {
+        width: 70vh;
+        height: 45vh;
+    }
+
+    .container_cartInfo {
+        width: 70vh;
+    }
+}

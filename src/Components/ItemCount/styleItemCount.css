@@ -1,0 +1,63 @@
+.counter {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0rem 1rem;
+    height: 2rem;
+}
+
+.add {
+    color: #FFFFFF;
+    background-color: #111111;
+    border: #111111;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-weight: 800;
+}
+
+.back {
+    margin: 0 auto;
+}
+
+.back a {
+    color: #111111 !important;
+    text-decoration: none !important;
+}
+
+.botonBack {
+    border: none;
+    background: none;
+}
+
+.botonBack span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.botonSpan {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.botonSpan:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.botonBack:hover .botonSpan:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

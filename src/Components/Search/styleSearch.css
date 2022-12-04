@@ -1,0 +1,9 @@
+.form-control {
+    border: 3px solid #191919 !important;
+}
+
+@media screen and (min-width: 349px) and (max-width: 576px) {
+    .formSearch input {
+        font-size: 0.7rem;
+    }
+}

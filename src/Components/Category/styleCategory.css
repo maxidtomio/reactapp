@@ -1,0 +1,36 @@
+.category_container {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.category_container img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.category_container:hover img {
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+.category_text {
+    background-color: rgba(204, 197, 197, 0.95);
+    padding: 0.8rem 0;
+    position: absolute;
+    bottom: 30%;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.category_text h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: bold;
+    margin: 0;
+}

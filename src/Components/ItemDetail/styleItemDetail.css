@@ -1,0 +1,99 @@
+.detail {
+    margin: 2rem auto;
+    padding: 0 0 1rem;
+    max-width: 95%;
+    max-height: auto;
+    background-color: white;
+}
+
+.carrusel {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    padding: 2.5rem 1.5rem 0;
+}
+
+.title {
+    text-align: left;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.price {
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.description {
+    text-align: justify;
+}
+
+.stock {
+    padding-top: .5rem;
+    text-align: left;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1.5rem auto
+}
+
+.rating input {
+    display: none
+}
+
+.rating label {
+    position: relative;
+    width: 1em;
+    font-size: 35px;
+    font-weight: 300;
+    color: rgb(236, 169, 25);
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating label:hover:before,
+.rating label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover input:checked~label:before {
+    opacity: 0.4
+}
+
+.category {
+    margin-top: 1.5rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 349px) and (max-width: 576px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .description .stock {
+        font-size: 0.8rem;
+    }
+}

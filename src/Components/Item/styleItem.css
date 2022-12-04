@@ -1,0 +1,69 @@
+.card {
+    margin: 0.8rem auto;
+}
+
+.card-img-top {
+    border-bottom: #fdc91c 2px solid;
+    object-fit: cover;
+    width: 100%;
+    height: 55vh;
+}
+
+.card-category {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card-price {
+    color: #000000;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.boton {
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    appearance: none;
+    text-transform: uppercase;
+    white-space: normal;
+    transition: all 200ms ease;
+    padding: 0.8125rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    letter-spacing: 0.125rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border-radius: 2.5rem;
+    float: left;
+    width: 100%;
+}
+
+.boton:hover {
+    opacity: 0.8
+}
+
+@media screen and (min-width: 349px) and (max-width: 576px) {
+    .card-img-top {
+        height: auto;
+    }
+
+    .boton {
+        padding: 0.7rem;
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        border-radius: 2rem;
+    }
+}

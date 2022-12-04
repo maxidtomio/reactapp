@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CartContext from './Context/CartContext';
+import Rutas from './Routes/Rutas';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CartContext>
+        <Rutas/>
+      </CartContext>
+    </> //Todo lo que esté adentro de GlobalStateContext puede acceder a la información del value. Pueden usarla o no pero siempre tienen acceso.
   );
 }
 

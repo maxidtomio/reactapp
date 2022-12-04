@@ -1,0 +1,21 @@
+.errorContainer {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.errorPag {
+    background-color: #000000;
+    height: 100vh;
+    color: #E8E8E8;
+}
+
+@media screen and (min-width: 349px) and (max-width: 576px) {
+    .errorPag img {
+        width: 250px;
+    }
+
+    .errorPag h5 {
+        font-size: 0.7rem;
+    }
+
+}

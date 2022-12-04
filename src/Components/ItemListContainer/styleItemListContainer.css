@@ -1,0 +1,13 @@
+.category_title {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 480px) {
+    .category_title {
+        font-size: 1.2rem;
+    }
+}
